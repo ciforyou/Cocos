@@ -1,55 +1,85 @@
-2018-05-25T23:24:30.703Z - normal: Load ~/.CocosCreator/settings.json
-2018-05-25T23:24:30.707Z - normal: checking language setting...
-2018-05-25T23:24:30.707Z - normal: Language: zh
-2018-05-25T23:24:32.304Z - success: protocol editor-framework registered
-2018-05-25T23:24:32.304Z - success: protocol app registered
-2018-05-25T23:24:32.304Z - success: protocol theme registered
-2018-05-25T23:24:32.304Z - success: protocol packages registered
-2018-05-25T23:24:32.304Z - success: protocol unpack registerred
-2018-05-25T23:24:32.304Z - success: protocol disable-commonjs registerred
-2018-05-25T23:24:32.574Z - normal: connected!
-2018-05-25T23:24:32.576Z - normal: Check project F:\Cocos\start_project
-2018-05-25T23:24:32.578Z - normal: Initializing project F:\Cocos\start_project
-2018-05-25T23:24:32.587Z - normal: Initializing Cocos2d
-2018-05-25T23:24:33.750Z - normal: Initializing Asset Database
-2018-05-25T23:24:33.799Z - success: protocol uuid registerred
-2018-05-25T23:24:33.799Z - success: protocol db registerred
-2018-05-25T23:24:33.799Z - success: protocol thumbnail registerred
-2018-05-25T23:24:33.799Z - normal: Loading editor/builtin packages
-2018-05-25T23:24:33.823Z - success: anysdk loaded
-2018-05-25T23:24:33.952Z - success: assets loaded
-2018-05-25T23:24:33.953Z - success: builder loaded
-2018-05-25T23:24:33.959Z - success: cocos-analytics loaded
-2018-05-25T23:24:33.962Z - success: console loaded
-2018-05-25T23:24:33.991Z - success: fb-instant-games loaded
-2018-05-25T23:24:33.996Z - success: hierarchy loaded
-2018-05-25T23:24:33.998Z - success: inspector loaded
-2018-05-25T23:24:33.999Z - success: keystore loaded
-2018-05-25T23:24:34.003Z - success: node-library loaded
-2018-05-25T23:24:34.004Z - success: package-asset loaded
-2018-05-25T23:24:34.005Z - success: preferences loaded
-2018-05-25T23:24:34.007Z - success: project-exporter loaded
-2018-05-25T23:24:34.022Z - success: project-importer loaded
-2018-05-25T23:24:34.023Z - success: project-settings loaded
-2018-05-25T23:24:34.031Z - success: ui-kit loaded
-2018-05-25T23:24:34.034Z - success: scene loaded
-2018-05-25T23:24:34.036Z - success: sprite-editor loaded
-2018-05-25T23:24:34.039Z - success: store loaded
-2018-05-25T23:24:34.043Z - success: timeline loaded
-2018-05-25T23:24:34.043Z - normal: Loading builtin packages
-2018-05-25T23:24:34.057Z - success: asset-db-debugger loaded
-2018-05-25T23:24:34.066Z - success: code-editor loaded
-2018-05-25T23:24:34.069Z - success: color-picker loaded
-2018-05-25T23:24:34.077Z - success: package-manager loaded
-2018-05-25T23:24:34.080Z - success: qqplay-adapter loaded
-2018-05-25T23:24:34.094Z - success: sdkbox loaded
-2018-05-25T23:24:34.106Z - success: tester loaded
-2018-05-25T23:24:34.114Z - success: ui-grid loaded
-2018-05-25T23:24:34.121Z - success: ui-kit-preview-extra loaded
-2018-05-25T23:24:34.128Z - success: ui-kit-preview loaded
-2018-05-25T23:24:34.136Z - success: ui-tree loaded
-2018-05-25T23:24:34.139Z - success: weapp-adapter loaded
-2018-05-25T23:24:35.261Z - normal: Loading packages
-2018-05-25T23:24:35.261Z - normal: Watching packages
-2018-05-25T23:24:36.042Z - normal: Run Application
-2018-05-25T23:24:37.004Z - success: preview server running at http://localhost:7456
+2018-05-27T00:03:16.061Z - normal: Load ~/.CocosCreator/settings.json
+2018-05-27T00:03:16.065Z - normal: checking language setting...
+2018-05-27T00:03:16.065Z - normal: Language: zh
+2018-05-27T00:03:17.608Z - success: protocol editor-framework registered
+2018-05-27T00:03:17.608Z - success: protocol app registered
+2018-05-27T00:03:17.608Z - success: protocol theme registered
+2018-05-27T00:03:17.608Z - success: protocol packages registered
+2018-05-27T00:03:17.608Z - success: protocol unpack registerred
+2018-05-27T00:03:17.608Z - success: protocol disable-commonjs registerred
+2018-05-27T00:03:17.903Z - normal: connected!
+2018-05-27T00:03:17.904Z - normal: Check project F:\Cocos\start_project
+2018-05-27T00:03:17.906Z - normal: Initializing project F:\Cocos\start_project
+2018-05-27T00:03:17.913Z - normal: Initializing Cocos2d
+2018-05-27T00:03:18.926Z - normal: Initializing Asset Database
+2018-05-27T00:03:18.966Z - success: protocol uuid registerred
+2018-05-27T00:03:18.966Z - success: protocol db registerred
+2018-05-27T00:03:18.966Z - success: protocol thumbnail registerred
+2018-05-27T00:03:18.966Z - normal: Loading editor/builtin packages
+2018-05-27T00:03:18.986Z - success: anysdk loaded
+2018-05-27T00:03:19.102Z - success: assets loaded
+2018-05-27T00:03:19.103Z - success: builder loaded
+2018-05-27T00:03:19.106Z - success: cocos-analytics loaded
+2018-05-27T00:03:19.110Z - success: console loaded
+2018-05-27T00:03:19.139Z - success: fb-instant-games loaded
+2018-05-27T00:03:19.144Z - success: hierarchy loaded
+2018-05-27T00:03:19.147Z - success: inspector loaded
+2018-05-27T00:03:19.148Z - success: keystore loaded
+2018-05-27T00:03:19.151Z - success: node-library loaded
+2018-05-27T00:03:19.153Z - success: package-asset loaded
+2018-05-27T00:03:19.153Z - success: preferences loaded
+2018-05-27T00:03:19.155Z - success: project-exporter loaded
+2018-05-27T00:03:19.170Z - success: project-importer loaded
+2018-05-27T00:03:19.172Z - success: project-settings loaded
+2018-05-27T00:03:19.180Z - success: ui-kit loaded
+2018-05-27T00:03:19.183Z - success: scene loaded
+2018-05-27T00:03:19.184Z - success: sprite-editor loaded
+2018-05-27T00:03:19.187Z - success: store loaded
+2018-05-27T00:03:19.191Z - success: timeline loaded
+2018-05-27T00:03:19.191Z - normal: Loading builtin packages
+2018-05-27T00:03:19.202Z - success: asset-db-debugger loaded
+2018-05-27T00:03:19.215Z - success: code-editor loaded
+2018-05-27T00:03:19.218Z - success: color-picker loaded
+2018-05-27T00:03:19.227Z - success: package-manager loaded
+2018-05-27T00:03:19.230Z - success: qqplay-adapter loaded
+2018-05-27T00:03:19.248Z - success: sdkbox loaded
+2018-05-27T00:03:19.260Z - success: tester loaded
+2018-05-27T00:03:19.268Z - success: ui-grid loaded
+2018-05-27T00:03:19.276Z - success: ui-kit-preview-extra loaded
+2018-05-27T00:03:19.284Z - success: ui-kit-preview loaded
+2018-05-27T00:03:19.291Z - success: ui-tree loaded
+2018-05-27T00:03:19.295Z - success: weapp-adapter loaded
+2018-05-27T00:03:20.416Z - normal: Loading packages
+2018-05-27T00:03:20.423Z - normal: Watching packages
+2018-05-27T00:03:21.474Z - normal: Run Application
+2018-05-27T00:03:22.324Z - success: preview server running at http://localhost:7456
+2018-05-27T01:00:21.529Z - warn: Please change the definition of property 'scoreAudio' in class 'game'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    scoreAudio: cc.Texture2D,
+    // or:
+    scoreAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    scoreAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2018-05-27T01:00:21.530Z - warn: Please change the definition of property 'jumpAudio' in class 'player'. Starting from v1.10,
+the use of declaring a property in CCClass as a URL has been deprecated.
+For example, if property is Texture2D, the previous definition is:
+    jumpAudio: cc.Texture2D,
+    // or:
+    jumpAudio: {
+      url: cc.Texture2D,
+      default: ""
+    },
+Now it should be changed to:
+    jumpAudio: {
+      type: cc.Texture2D, // use 'type:' to define Texture2D object directly
+      default: null,      // object's default value is null
+    },
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )

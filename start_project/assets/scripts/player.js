@@ -20,6 +20,11 @@ cc.Class({
         maxMoveSpeed: 0,
         // 加速度
         accel: 0,
+        // 跳跃音效资源
+        jumpAudio: {
+            default: null,
+            url: cc.AudioClip
+        },
     },
 
     setJumpAction: function () {
@@ -27,10 +32,16 @@ cc.Class({
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
         var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
-        // 不断重复
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+         // 添加一个回调函数，用于在动作结束时调用我们定义的其他方法
+         var callback = cc.callFunc(this.playJumpSound, this);
+         // 不断重复，而且每次完成落地动作后调用回调来播放声音
+         return cc.repeatForever(cc.sequence(jumpUp, jumpDown, callback));
     },
     
+    playJumpSound: function () {
+        // 调用声音引擎播放声音
+        cc.audioEngine.playEffect(this.jumpAudio, false);
+    },
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
@@ -98,16 +109,27 @@ cc.Class({
         // 根据当前速度更新主角的位置
         // this.node.x += this.xSpeed * dt;
         
-        newX = this.node.x + this.xSpeed * dt;
-        // halfWinSize = cc.winSize / 2;
-        // if (newX < -halfWinSize) {
-        //     this.node.x = -halfWinSize;
-        // } else if(newX > halfWinSize){
-        //     this.node.x = halfWinSize;
-        // }else{
-            this.node.x = this.node.x + this.xSpeed * dt;
-        // }
+        //精灵运动范围不超过屏幕边界
+        var newX = this.node.x + this.xSpeed * dt;
+        var halfWinSize = cc.winSize.width / 2;
+        if (newX < -halfWinSize + this.node.width / 2) {
+            this.node.x = -halfWinSize + this.node.width / 2;
+            this.xSpeed = 0;
+        } else if(newX > halfWinSize - this.node.width / 2){
+            this.node.x = halfWinSize - this.node.width / 2;
+            this.xSpeed = 0;
+        }else{
+            this.node.x =newX;
+        }
+        //停止按键后，在精灵落地后停止前进
+        if(Math.floor(this.node.y) <= -this.node.height && this.accLeft == false && this.accRight == false){
+            this.xSpeed = 0;
+        }
+        //按键与前进方向相反时，改变运动方向
+        if((this.xSpeed > 0 && this.accLeft == true) || (this.xSpeed < 0 && this.accRight ==true)){
+            this.xSpeed = -this.xSpeed;
+        }
         // cc.log(newX,halfWinSize);
-        // console.log(newX,-cc.winSize / 2)
+        // console.log(Math.floor(this.node.y),-this.node.height)
     },
 });
